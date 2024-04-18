@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Review</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="logo.jpg" alt="Movie Review Logo" class="logo-img">
+        <h1 class="logo">Movie Review Website</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>The Last of Us</h1>
+
+        <div class="trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uLtkt8BonwM" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="movie-details">
+            <div class="poster">
+                <img src="last_of_us_poster.jpg" alt="The Last of Us">
+            </div>
+            
+            <div class="details">
+                <h2>The Last of Us</h2>
+                <p><strong>Release Year:</strong> 2023</p>
+                <p><strong>Genre:</strong> Action, Adventure, Drama</p>
+                <p><strong>Age Rating:</strong> Mature</p>
+                <p><strong>Director:</strong> Neil Druckmann</p>
+                <p><strong>Stars:</strong> Pedro Pascal, Bella Ramsey</p>
+                <p><strong>Studio:</strong> Naughty Dog</p>
+            </div>
+        </div>
+
+        <div class="review-form">
+            <h2>Write a Review</h2>
+            <br>
+            <label for="rating">Rating:</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1"></label>
+            </div>
+              
+            <form id="review-form">
+                <label for="reviewText">Review:</label>
+                <textarea id="reviewText" name="reviewText" rows="4" required></textarea>
+                <br>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+        <div class="right-section">
+            <h2>More to Explore</h2>
+            <div class="explore-posters">
+                <a href="kung_fu_panda_4.html"><img src="kfp4poster.jpeg" alt="Kung Fu Panda 4"></a>
+                <a href="dune_part_2.html"><img src="dune2poster.jpeg" alt="Dune Part 2"></a>
+                <a href="1917.html"><img src="1917.webp" alt="1917"></a>
+                <a href="oppenheimer.html"><img src="oppe.webp" alt="Oppenheimer"></a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

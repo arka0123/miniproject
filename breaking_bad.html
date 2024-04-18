@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Review</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="logo.jpg" alt="Movie Review Logo" class="logo-img">
+        <h1 class="logo">Movie Review Website</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Breaking Bad</h1>
+
+        <!-- Trailer iframe -->
+        <div class="trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HhesaQXLuRY" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="movie-details">
+            <!-- Poster on the left -->
+            <div class="poster">
+                <img src="breaking_bad_poster.webp" alt="Breaking Bad">
+            </div>
+            
+            <!-- Movie details -->
+            <div class="details">
+                <h2>Breaking Bad</h2>
+                <p><strong>Seasons:</strong> 5</p>
+                <p><strong>Genre:</strong> Crime, Drama, Thriller</p>
+                <p><strong>Age Rating:</strong> TV-MA</p>
+                <p><strong>First Release Year:</strong> 2008</p>
+                <p><strong>Creator:</strong> Vince Gilligan</p>
+                <p><strong>Stars:</strong> Bryan Cranston, Aaron Paul, Anna Gunn</p>
+                <p><strong>Studio:</strong> AMC</p>
+            </div>
+        </div>
+
+        <!-- Review form -->
+        <div class="review-form">
+            <h2>Write a Review</h2>
+            <br>
+            <label for="rating">Rating:</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1"></label>
+            </div>
+              
+            <form id="review-form">
+                <label for="reviewText">Review:</label>
+                <textarea id="reviewText" name="reviewText" rows="4" required></textarea>
+                <br>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+        <!-- Right section with more to explore -->
+        <div class="right-section">
+            <h2>More to Explore</h2>
+            <div class="explore-posters">
+                <a href="kung_fu_panda_4.html"><img src="kfp4poster.jpeg" alt="Kung Fu Panda 4"></a>
+                <a href="dune_part_2.html"><img src="dune2poster.jpeg" alt="Dune Part 2"></a>
+                <a href="1917.html"><img src="1917.webp" alt="1917"></a>
+                <a href="oppenheimer.html"><img src="oppe.webp" alt="Oppenheimer"></a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

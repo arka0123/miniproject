@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="logo.jpg" alt="Movie Review Logo" class="logo-img">
+        <h1 class="logo">Movie Review Website</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <h1>Godzilla x Kong: The New Empire</h1>
+
+            <div class="trailer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qqrpMRDuPfc" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="movie-details">
+                <div class="poster">
+                    <img src="gvk2poster.jpg" alt="Godzilla x Kong: The New Empire">
+                </div>
+                
+                <div class="details">
+                    <h2>Godzilla x Kong: The New Empire</h2>
+                    <p><strong>Runtime:</strong> 115 minutes</p>
+                    <p><strong>Genre:</strong> Action, Adventure</p>
+                    <p><strong>Age Rating:</strong> PG-13</p>
+                    <p><strong>Release Year:</strong> 2023</p>
+                    <p><strong>Director:</strong> Adam Wingard</p>
+                    <p><strong>Actors:</strong> Rebecca Hall, Brian Tyree Henry, Dan Stevens</p>
+                    <p><strong>Studio:</strong> Warner Bros., Legendary</p>
+                </div>
+            </div>
+            <div class="review-form">
+                <h2>Write a Review</h2>
+                <br>
+                <label for="rating">Rating:</label>
+                <div class="rating">
+                    
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1"></label>
+                </div>
+                  
+                <form id="review-form">
+                    
+                    <label for="reviewText">Review:</label>
+                    <textarea id="reviewText" name="reviewText" rows="4" required></textarea>
+                    <br>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2>More to Explore</h2>
+            <div class="explore-posters">
+                <a href="kung_fu_panda_4.html"><img src="kfp4poster.jpeg" alt="Kung Fu Panda 4"></a>
+                <a href="dune_part_2.html"><img src="dune2poster.jpeg" alt="Dune Part 2"></a>
+                <a href="1917.html"><img src="1917.webp" alt="1917"></a>
+                <a href="oppenheimer.html"><img src="oppe.webp" alt="Oppenheimer"></a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
